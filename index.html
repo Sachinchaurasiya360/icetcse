@@ -10,7 +10,11 @@
     
     <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -20,11 +24,15 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">ICETCSE 2025</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -35,13 +43,10 @@
                         <a class="nav-link" href="#timeline">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#fees">Fees</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-modern btn-primary ms-lg-3" href="#register">Register Now</a>
+                    <li class="nav-item register-btn">
+                        <a class="nav-link" href="#register">Register</a>
                     </li>
                 </ul>
             </div>
@@ -125,99 +130,68 @@
     <section class="tracks-section py-5" id="tracks">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <span class="section-subtitle">Areas of Interest</span>
                 <h2 class="section-title">Conference Tracks</h2>
                 <p class="section-description">Explore our diverse range of tracks covering cutting-edge topics in computer science and engineering</p>
             </div>
 
             <div class="tracks-container">
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="track-card">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="track-card h-100" data-aos="fade-up">
                             <div class="track-icon">
                                 <i class="fas fa-brain"></i>
                             </div>
-                            <h3 class="track-title">Artificial Intelligence & Machine Learning</h3>
+                            <h3>AI and Machine Learning</h3>
                             <ul class="track-topics">
-                                <li>Deep Learning & Neural Networks</li>
-                                <li>Computer Vision & Pattern Recognition</li>
+                                <li>Deep Learning and Neural Networks</li>
                                 <li>Natural Language Processing</li>
+                                <li>Computer Vision and Pattern Recognition</li>
                                 <li>Reinforcement Learning</li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="track-card">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="track-card h-100" data-aos="fade-up" data-aos-delay="100">
+                            <div class="track-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Robotics and Automation</h3>
+                            <ul class="track-topics">
+                                <li>Industrial Robotics</li>
+                                <li>Autonomous Systems</li>
+                                <li>Human-Robot Interaction</li>
+                                <li>Smart Manufacturing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="track-card h-100" data-aos="fade-up" data-aos-delay="200">
+                            <div class="track-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>IoT and Edge Computing</h3>
+                            <ul class="track-topics">
+                                <li>Smart Devices and Sensors</li>
+                                <li>Edge AI and Analytics</li>
+                                <li>IoT Security</li>
+                                <li>Industrial IoT Applications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="track-card h-100" data-aos="fade-up" data-aos-delay="300">
                             <div class="track-icon">
                                 <i class="fas fa-shield-alt"></i>
                             </div>
-                            <h3 class="track-title">Cybersecurity & Privacy</h3>
+                            <h3>Cybersecurity</h3>
                             <ul class="track-topics">
-                                <li>Network & System Security</li>
-                                <li>Cryptography & Blockchain</li>
-                                <li>Privacy-Preserving Computing</li>
-                                <li>Security in IoT Systems</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="track-card">
-                            <div class="track-icon">
-                                <i class="fas fa-cloud"></i>
-                            </div>
-                            <h3 class="track-title">Cloud & Edge Computing</h3>
-                            <ul class="track-topics">
-                                <li>Distributed Systems</li>
-                                <li>Edge Computing & IoT</li>
-                                <li>Cloud-Native Applications</li>
-                                <li>Serverless Architecture</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="track-card">
-                            <div class="track-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <h3 class="track-title">Data Science & Analytics</h3>
-                            <ul class="track-topics">
-                                <li>Big Data Analytics</li>
-                                <li>Data Mining & Visualization</li>
-                                <li>Business Intelligence</li>
-                                <li>Predictive Analytics</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="track-card">
-                            <div class="track-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3 class="track-title">Mobile & Web Technologies</h3>
-                            <ul class="track-topics">
-                                <li>Progressive Web Applications</li>
-                                <li>Mobile Computing</li>
-                                <li>Cross-Platform Development</li>
-                                <li>UI/UX Design Patterns</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="track-card">
-                            <div class="track-icon">
-                                <i class="fas fa-microchip"></i>
-                            </div>
-                            <h3 class="track-title">Emerging Technologies</h3>
-                            <ul class="track-topics">
-                                <li>Quantum Computing</li>
-                                <li>5G & 6G Networks</li>
-                                <li>Extended Reality (XR)</li>
-                                <li>Green Computing</li>
+                                <li>Network Security</li>
+                                <li>Cryptography</li>
+                                <li>Security in AI Systems</li>
+                                <li>Privacy and Data Protection</li>
                             </ul>
                         </div>
                     </div>
@@ -226,129 +200,52 @@
         </div>
     </section>
 
-            <!-- Patron -->
-            <div class="team-category">
-                <h3 class="team-category-title">Patron</h3>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="team-card">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. S.S.Inamdar" class="team-image">
-                            <div class="team-info">
-                                <h3 class="team-name">Dr. S.S.Inamdar</h3>
-                                <p class="team-role">Vice President, Vishwaniketan</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Conference Chair -->
-            <div class="team-category">
-                <h3 class="team-category-title">Conference Chair</h3>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="team-card">
-                            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Dr. B.R.Patil" class="team-image">
-                            <div class="team-info">
-                                <h3 class="team-name">Dr. B.R.Patil</h3>
-                                <p class="team-role">Principal, ViMEET</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Conference Co-chairs -->
-            <div class="team-category">
-                <h3 class="team-category-title">Conference Co-chairs</h3>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="team-card">
-                            <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Dr. S.B.Kadam" class="team-image">
-                            <div class="team-info">
-                                <h3 class="team-name">Dr. S.B.Kadam</h3>
-                                <p class="team-role">Vice Principal (Admin), ViMEET</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="team-card">
-                            <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Prof. Shivani Agrawal" class="team-image">
-                            <div class="team-info">
-                                <h3 class="team-name">Prof. Shivani Agrawal</h3>
-                                <p class="team-role">Vice Principal (Academic), ViMEET</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Convener -->
-            <div class="team-category">
-                <h3 class="team-category-title">Convener</h3>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="team-card">
-                            <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Dr. Ankush Pawar" class="team-image">
-                            <div class="team-info">
-                                <h3 class="team-name">Dr. Ankush Pawar</h3>
-                                <p class="team-role">HOD CSE (AI & ML), ViMEET</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Co-convener -->
-            <div class="team-category">
-                <h3 class="team-category-title">Co-convener</h3>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="team-card">
-                            <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Prof. Ashwini Garole" class="team-image">
-                            <div class="team-info">
-                                <h3 class="team-name">Prof. Ashwini Garole</h3>
-                                <p class="team-role">CSE (AI & ML), ViMEET</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Organizing Committee -->
-            <div class="team-category">
-                <h3 class="team-category-title">Organizing Committee</h3>
-                <div class="organizing-committee">
-                    <div class="committee-member">
-                        <h4 class="team-name">Prof. Sneha Nimbare</h4>
-                    </div>
-                    <div class="committee-member">
-                        <h4 class="team-name">Prof. Kashmira Dalvi</h4>
-                    </div>
-                    <div class="committee-member">
-                        <h4 class="team-name">Prof. Mahesh Sutar</h4>
-                    </div>
-                    <div class="committee-member">
-                        <h4 class="team-name">Prof. Hemant Kamble</h4>
-                    </div>
-                    <div class="committee-member">
-                        <h4 class="team-name">Prof. Aqsa Sarnaik</h4>
-                    </div>
-                    <div class="committee-member">
-                        <h4 class="team-name">Prof. Rohan Patil</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-            
-    <!-- Registration Fees Section -->
-    <section class="fees-section" id="fees">
+    <!-- Collaboration Section -->
+    <section class="collaboration-section py-5" id="collaboration">
         <div class="container">
-            <div class="section-title">
-                <h2>Registration Fees</h2>
-                <div class="title-underline"></div>
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Our Partners</span>
+                <h2 class="section-title">Our Collaborations</h2>
+                <p class="section-description">Proud to collaborate with leading organizations in technology and education</p>
+            </div>
+
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="collaboration-card">
+                        <div class="collaboration-logo">
+                            <img src="images/IEEE-BS-Logo.webp" alt="IEEE Bombay Section" class="img-fluid">
+                        </div>
+                        <div class="collaboration-content">
+                            <h3>IEEE Bombay Section</h3>
+                            <p>A distinguished part of IEEE Region 10, the IEEE Bombay Section promotes technological innovation and excellence in the Mumbai region.</p>
+                            <a href="https://ieeebombay.org" class="btn btn-outline-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="collaboration-card">
+                        <div class="collaboration-logo">
+                            <img src="images/cur.png" alt="CUREUES" class="img-fluid">
+                        </div>
+                        <div class="collaboration-content">
+                            <h3>CUREUES</h3>
+                            <p>Consortium of Universities for Research and Engineering in Emerging Sciences, fostering innovation and research collaboration.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Fees Section -->
+    <section class="fees-section py-5" id="fees">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Conference Fees</span>
+                <h2 class="section-title">Registration Fees</h2>
+                <p class="section-description">Choose the registration category that best suits you</p>
             </div>
             
             <div class="row g-4 justify-content-center">
@@ -408,47 +305,381 @@
             </div>
         </div>
     </section>
-
     <!-- Timeline Section -->
-    <section class="timeline-section section-padding" id="timeline">
+    <section class="timeline-section py-5" id="timeline">
         <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="mb-4">Important Dates</h2>
-                    <p class="lead">Mark your calendar for these key deadlines</p>
-                </div>
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Key Dates</span>
+                <h2 class="section-title">Important Deadlines</h2>
+                <p class="section-description">Mark your calendar with these crucial dates for ICETCSE 2025</p>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="timeline-item" data-aos="fade-up">
-                        <span class="timeline-date">December 15, 2024</span>
-                        <h4>Paper Submission Deadline</h4>
-                        <p>Submit your research papers by this date</p>
+    
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 15, 2024</div>
+                        <h3>Paper Submission Deadline</h3>
+                        <p>Last date to submit your research papers</p>
                     </div>
-                    <div class="timeline-item" data-aos="fade-up">
-                        <span class="timeline-date">January 30, 2025</span>
-                        <h4>Acceptance Notification</h4>
-                        <p>Authors will be notified of acceptance decisions</p>
+                </div>
+    
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 15, 2025</div>
+                        <h3>Acceptance Notification</h3>
+                        <p>Authors will be notified of paper acceptance</p>
                     </div>
-                    <div class="timeline-item" data-aos="fade-up">
-                        <span class="timeline-date">February 28, 2025</span>
-                        <h4>Camera Ready Submission</h4>
-                        <p>Final version of accepted papers due</p>
+                </div>
+    
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">February 15, 2025</div>
+                        <h3>Camera Ready Submission</h3>
+                        <p>Deadline for final paper submission</p>
                     </div>
-                    <div class="timeline-item" data-aos="fade-up">
-                        <span class="timeline-date">March 15-17, 2025</span>
-                        <h4>Conference Dates</h4>
-                        <p>Main conference proceedings and presentations</p>
+                </div>
+    
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">February 28, 2025</div>
+                        <h3>Early Bird Registration</h3>
+                        <p>Last date for early bird registration</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">March 15-17, 2025</div>
+                        <h3>Conference Dates</h3>
+                        <p>Main conference days at Vishwaniketan's iMEET</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Registration Section -->
-    <section class="py-5 bg-light" id="register">
+    <!-- Paper Submission Guidelines -->
+    <section class="submission-guidelines py-5" id="submission">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Registration</h2>
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Author Instructions</span>
+                <h2 class="section-title">Paper Submission Guidelines</h2>
+                <p class="section-description">Follow these guidelines carefully when preparing your submission</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="guidelines-card" data-aos="fade-up">
+                        <div class="guidelines-list">
+                            <div class="guideline-item">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h3>Paper Length</h3>
+                                    <p>Full-length paper should not exceed 6 pages.</p>
+                                </div>
+                            </div>
+
+                            <div class="guideline-item">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-list-alt"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h3>Paper Structure</h3>
+                                    <p>Paper should be structured in:</p>
+                                    <ul>
+                                        <li>Abstract</li>
+                                        <li>Introduction</li>
+                                        <li>Experimental</li>
+                                        <li>Results & Discussion</li>
+                                        <li>Conclusions</li>
+                                        <li>References</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="guideline-item">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h3>Submission Process</h3>
+                                    <p>Paper should be uploaded at Google link <a href="#" class="btn-link">Submit Paper <i class="fas fa-external-link-alt"></i></a></p>
+                                </div>
+                            </div>
+
+                            <div class="guideline-item">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-presentation"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h3>Presentation</h3>
+                                    <p>The authors of the accepted papers will be invited for oral presentation in the conference.</p>
+                                </div>
+                            </div>
+
+                            <div class="guideline-item">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-journal-whills"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h3>Publication Information</h3>
+                                    <ul>
+                                        <li>All papers presented will be submitted to journals</li>
+                                        <li>Additional publication charges apply upon journal acceptance (optional)</li>
+                                        <li>First top 15 papers will be published free of charges in the associated journal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section class="team-section py-5" id="team">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Our Leadership</span>
+                <h2 class="section-title">Conference Committee</h2>
+                <p class="section-description">Meet the distinguished leaders behind ICETCSE 2025</p>
+            </div>
+
+            <!-- Patron -->
+            <div class="team-category mb-5 text-center">
+                <h3 class="category-title mb-4">Patron</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card" data-aos="fade-up">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500" alt="Dr. S.S.Inamdar">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. S.S.Inamdar</h4>
+                                <p>Vice President, Vishwaniketan</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conference Chair -->
+            <div class="team-category mb-5 text-center">
+                <h3 class="category-title mb-4">Conference Chair</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card" data-aos="fade-up">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500" alt="Dr. B.R.Patil">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. B.R.Patil</h4>
+                                <p>Principal, ViMEET</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conference Co-Chairs -->
+            <div class="team-category mb-5 text-center">
+                <h3 class="category-title mb-4">Conference Co-Chairs</h3>
+                <div class="row justify-content-center g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500" alt="Dr. S.B.Kadam">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. S.B.Kadam</h4>
+                                <p>Vice Principal (Admin), ViMEET</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500" alt="Prof. Shivani Agrawal">
+                            </div>
+                            <div class="member-info">
+                                <h4>Prof. Shivani Agrawal</h4>
+                                <p>Vice Principal (Academic), ViMEET</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convener & Co-convener -->
+            <div class="team-category mb-5">
+                <div class="row justify-content-center g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="category-title text-center mb-4">Convener</h3>
+                        <div class="team-card" data-aos="fade-right">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500" alt="Dr. Ankush Pawar">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Ankush Pawar</h4>
+                                <p>HOD CSE (AI & ML), ViMEET</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="category-title text-center mb-4">Co-convener</h3>
+                        <div class="team-card" data-aos="fade-left">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500" alt="Prof. Ashwini Garole">
+                            </div>
+                            <div class="member-info">
+                                <h4>Prof. Ashwini Garole</h4>
+                                <p>CSE (AI & ML), ViMEET</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organizing Committee -->
+            <div class="team-category">
+                <h3 class="category-title text-center mb-4">Organizing Committee</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="committee-grid" data-aos="fade-up">
+                            <div class="committee-card">
+                                <h4>Prof. Sneha Nimbare</h4>
+                            </div>
+                            <div class="committee-card">
+                                <h4>Prof. Kashmira Dalvi</h4>
+                            </div>
+                            <div class="committee-card">
+                                <h4>Prof. Mahesh Sutar</h4>
+                            </div>
+                            <div class="committee-card">
+                                <h4>Prof. Hemant Kamble</h4>
+                            </div>
+                            <div class="committee-card">
+                                <h4>Prof. Aqsa Sarnaik</h4>
+                            </div>
+                            <div class="committee-card">
+                                <h4>Prof. Rohan Patil</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Advisory Committee -->
+        <div class="container">
+            <div class="team-category">
+                <h3 class="category-title text-center">Advisory Committee</h3>
+                <div class="row justify-content-center g-4">
+                    <!-- International Members -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card" data-aos="fade-up">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500" alt="Dr. Daniel Goldsmith">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Daniel Goldsmith</h4>
+                                <p>Professor, Coventry University, UK</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500" alt="Dr. Adam Worrallo">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Adam Worrallo</h4>
+                                <p>Professor, Coventry University, UK</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500" alt="Dr. Davide Fucci">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Davide Fucci</h4>
+                                <p>Associate Professor, BTH Karlskrona, Sweden</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500" alt="Dr. Rahul Mohanani">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Rahul Mohanani</h4>
+                                <p>Assistant Professor, University of Jyvaskyla, Finland</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Registration Section -->
+    <section class="registration-section py-5" id="register">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Join Us</span>
+                <h2 class="section-title">Register Now</h2>
+                <p class="section-description">Secure your spot at ICETCSE 2025</p>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8" data-aos="fade-up">
                     <div class="card">
@@ -481,32 +712,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="py-5" id="contact">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Contact Us</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-6" data-aos="fade-up">
-                    <div class="card">
-                        <div class="card-body">
-                            <form id="contactForm">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
     <footer>
@@ -516,7 +722,7 @@
                     <h5 class="footer-title">Contact Us</h5>
                     <ul class="footer-links">
                         <li>Email: icetcse2025@vishwaniketan.edu.in</li>
-                        <li>Phone: +91 XXX XXX XXXX</li>
+                        <li>Phone: +91 7070416209</li>
                         <li>Address: Vishwaniketan, Khalapur, Maharashtra</li>
                     </ul>
                 </div>
@@ -526,7 +732,6 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#tracks">Tracks</a></li>
                         <li><a href="#timeline">Timeline</a></li>
-                        <li><a href="#team">Team</a></li>
                         <li><a href="#fees">Fees</a></li>
                         <li><a href="#register">Register</a></li>
                     </ul>
@@ -551,35 +756,8 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                document.querySelector('.navbar').classList.add('scrolled');
-            } else {
-                document.querySelector('.navbar').classList.remove('scrolled');
-            }
-        });
-
-        // Create particles
-        function createParticles() {
-            const particles = document.createElement('div');
-            particles.className = 'particles';
-            document.querySelector('.hero-section').appendChild(particles);
-
-            for (let i = 0; i < 50; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-                particle.style.animationDelay = (Math.random() * 5) + 's';
-                particles.appendChild(particle);
-            }
-        }
-
-        // Initialize particles
-        window.addEventListener('load', createParticles);
-    </script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
-</html>
