@@ -225,3 +225,323 @@
         padding: 1.25rem;
     }
 }
+
+/* Mobile Responsive Styles */
+
+/* Base Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    /* Navigation */
+    .navbar {
+        padding: 0.5rem 1rem;
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 0.25rem 0;
+    }
+
+    .navbar-nav {
+        background: var(--white);
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .register-btn {
+        margin: 0.5rem 0;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        padding: 6rem 1rem 3rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+
+    /* About Section */
+    .about-image {
+        margin-bottom: 2rem;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    /* Conference Tracks */
+    .tracks-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .track-card {
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    .track-icon {
+        margin-bottom: 1rem;
+    }
+
+    .track-topics {
+        margin-top: 1rem;
+    }
+
+    /* Timeline */
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        padding-left: 60px;
+        padding-right: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-dot {
+        left: 22px;
+    }
+
+    .timeline-content {
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    .timeline-date {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Committee Section */
+    .committee-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .committee-card {
+        padding: 1.25rem;
+    }
+
+    .committee-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .committee-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Fees Section */
+    .fee-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .fee-card {
+        margin: 0;
+    }
+
+    .fee-header {
+        padding: 1.5rem;
+    }
+
+    .fee-body {
+        padding: 1.5rem;
+    }
+
+    .fee-item {
+        padding: 0.75rem 0;
+    }
+
+    /* Guidelines */
+    .guideline-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .guideline-icon {
+        margin: 0 auto 1rem;
+    }
+
+    .guideline-content {
+        padding-left: 0;
+    }
+
+    .guideline-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .guideline-content p,
+    .guideline-content ul {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .footer-col {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-links a {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .footer-bottom {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .track-card {
+        padding: 1.25rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+
+    .committee-card {
+        padding: 1rem;
+    }
+
+    .fee-header {
+        padding: 1.25rem;
+    }
+
+    .fee-body {
+        padding: 1.25rem;
+    }
+
+    .guideline-item {
+        padding: 1.25rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablet Devices (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .tracks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .committee-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fee-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 480px) and (orientation: landscape) {
+    .hero-section {
+        height: auto;
+    }
+
+    .hero-content {
+        padding: 4rem 1rem 2rem;
+    }
+
+    .navbar-collapse {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .section-padding {
+        padding: 2rem 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer {
+        display: none;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
